@@ -1,0 +1,221 @@
+:root {
+--primary-color: #4e2b50;
+--secondary-color: #ffd9e1;
+--accent-color: #ff9ac1;
+--background-color: #f8e7ec;
+--text-color: #4e2b50;
+--white: #ffffff;
+--shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+/* === Reset === */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: var(--background-color);
+color: var(--text-color);
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+
+/* === Header === */
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 0;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.logo img {
+width: 40px;
+}
+
+.logo span {
+font-size: 1.2rem;
+font-weight: 700;
+color: var(--primary-color);
+}
+
+.nav ul {
+display: flex;
+list-style: none;
+}
+
+.nav-link {
+margin: 0 15px;
+text-decoration: none;
+color: var(--text-color);
+font-weight: 600;
+font-size: 0.9rem;
+}
+
+.nav-link:hover {
+color: var(--primary-color);
+}
+
+.menu-icon {
+display: none;
+}
+
+/* === Hero Section === */
+.hero {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: var(--secondary-color);
+border-radius: 20px;
+padding: 40px;
+margin-top: 20px;
+box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+.hero-content {
+max-width: 50%;
+}
+
+.hero-subtitle {
+font-size: 1rem;
+color: var(--accent-color);
+margin-bottom: 10px;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.hero-title {
+font-size: 3.5rem;
+font-weight: 700;
+color: var(--primary-color);
+line-height: 1.2;
+}
+
+.hero-description {
+font-size: 1rem;
+margin: 20px 0;
+}
+
+.cta-buttons {
+display: flex;
+gap: 15px;
+margin-top: 20px;
+}
+
+.btn {
+text-decoration: none;
+font-size: 0.9rem;
+padding: 10px 20px;
+border-radius: 5px;
+font-weight: 600;
+display: inline-block;
+text-align: center;
+}
+
+.btn.primary {
+background-color: var(--primary-color);
+color: var(--white);
+}
+
+.btn.secondary {
+border: 2px solid var(--primary-color);
+color: var(--primary-color);
+}
+
+.hero-image img {
+width: 100%;
+max-width: 400px;
+border-radius: 15px;
+}
+
+/* === Footer === */
+footer {
+text-align: center;
+margin-top: 20px;
+padding: 15px 0;
+font-size: 0.8rem;
+color: var(--text-color);
+}
+
+
+/* Responsiveness */
+
+/* Smartphones (portrait and landscape) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .logo span {
+        font-size: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 30px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Desktop (small screens) */
+@media (max-width: 1200px) {
+    .hero {
+        padding: 30px;
+    }
+}
